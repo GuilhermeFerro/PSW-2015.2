@@ -23,7 +23,7 @@ function puxarAula(data, disciplina, rota, local)
 			inserirTrecho(xhttp.responseText, local); //printa a string retornada pelo servidor no elemento armazenado em "local"
 		}
 	}
-	xhttp.open("GET", ("https://localhost:8080/" + rota + "?data=" + data + "&disciplina=" + disciplina), true);
+	xhttp.open("POST", ("https://localhost:8080/" + rota + "?data=" + data + "&disciplina=" + disciplina), true);
 	xhttp.send();
 }
 
