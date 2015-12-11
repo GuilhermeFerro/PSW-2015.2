@@ -2,5 +2,5 @@ var controlador = require('../controller/aulaCompleta.js')(); //chama o controll
 
 module.exports = function (app)
 {
-	app.get('/aulaCompleta', controlador.frasesDaAula); //GET do framework. 1º parâmetro: rota definina na URL. 2º parâmetro: função a ser executada
+	app.post('/aulaCompleta', controlador.frasesDaAula); //POST do framework. 1º parâmetro: rota definina na URL. 2º parâmetro: função a ser executada
 }
