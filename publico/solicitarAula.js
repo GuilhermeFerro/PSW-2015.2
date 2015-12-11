@@ -1,6 +1,7 @@
 var frasesDaAula = document.getElementById("frases");
 
-function enviarReq(){
+function enviarReq()
+{
 	var disciplina = document.forms["descDaAula"]["sigla"].value;
 	var dia = document.forms["descDaAula"]["dia"].value;
 	var mes = document.forms["descDaAula"]["mes"].value;
