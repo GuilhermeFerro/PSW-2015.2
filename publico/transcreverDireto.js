@@ -71,7 +71,7 @@ function tratarTransc(falaTranscrita, rotaVariavel, local)
 			inserirTrecho(xhttp.responseText, local); //printa a string retornada pelo servidor no elemento armazenado em "local"
 		}
 	}
-	xhttp.open("GET", ("https://localhost:8080/" + rotaVariavel + "=" + falaTranscrita), true);
+	xhttp.open("POST", ("https://localhost:8080/" + rotaVariavel + "=" + falaTranscrita), true);
 	xhttp.send();
 }
 
